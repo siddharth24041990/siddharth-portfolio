@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header style="background: url('cover.jpg') no-repeat center center/cover; color: white; padding: 6rem 0; text-align: center;">
-       
+    <header style="background: url('cover.jpg') no-repeat center center/cover; color: white; padding: 4rem 0; text-align: center;">
+        
     </header>
 
     <nav>
@@ -40,14 +40,41 @@
             <li>HCL Xtramiles Spot Award (Aug 2022 & Sept 2023)</li>
             <li>A&M Innovative Newcomer Award (Dec 2024)</li>
         </ul>
+
+        <h3>Technical Achievements</h3>
+        <ul>
+            <li>Orchestrated end-to-end database upgrades from SQL Server 2008 R2/2012 to SQL Server 2016/2017/2019/2022, boosting system performance and data accessibility.</li>
+            <li>Executed SQL Server migrations to Azure (IaaS & PaaS) and configured Azure Cosmos DB accounts, databases, and containers for cloud-based solutions.</li>
+            <li>Provisioned and optimized Azure Cosmos DB to ensure high availability, cost efficiency, and top-tier performance.</li>
+            <li>Automated database maintenance tasks using PowerShell scripts and SQL Agent jobs, reducing project costs and streamlining team workflows.</li>
+            <li>Developed custom scripts integrating Database Audit, Query Store, and DMVs to track query execution details and optimize performance.</li>
+            <li>Designed and implemented disaster recovery strategies for SQL Managed Instances (PaaS) and SQL VMs (IaaS) using Azure Site Recovery.</li>
+            <li>Specialized in high availability strategies, including Always ON, Log Shipping, Database Replication, and SQL Server Clustering.</li>
+            <li>Led SQL Violation Report Management at TCS to enforce data compliance and security protocols.</li>
+        </ul>
+
+        <h3>Disaster Recovery & High Availability</h3>
+        <ul>
+            <li>Implemented disaster recovery strategies for on-premises and cloud environments using Azure Site Recovery.</li>
+            <li>Extensive experience with Always ON, Log Shipping, Database Replication, and SQL Server Clustering.</li>
+        </ul>
+
+        <h3>Leadership & Strategic Contributions</h3>
+        <ul>
+            <li>Led teams across organizations, delivering end-to-end client support and ensuring minimal downtime through proactive database management.</li>
+            <li>Spearheaded SQL Violation Report Management at TCS to ensure data compliance and security.</li>
+        </ul>
     </section>
 
     <section id="projects" class="container">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Hilton Hotel Project (Accenture):</strong> Led the optimization of database performance and implemented high availability solutions for hospitality management systems.</li>
-            <li><strong>AXA XL Insurance Project (TCS):</strong> Managed SQL databases supporting critical insurance data operations.</li>
-            <li><strong>CRH Company Project (HCL):</strong> Performed database migrations to Azure Cosmos DB and developed automation scripts.</li>
+            <li><strong>Hilton Hotel Project (Accenture):</strong> Led the optimization of database performance and implemented high availability solutions for hospitality management systems, ensuring seamless data flow across hotel operations.</li>
+            <li><strong>AXA XL Insurance Project (TCS):</strong> Managed SQL databases supporting critical insurance data operations. Automated data backup strategies and improved query performance, enhancing system efficiency and data security.</li>
+            <li><strong>CRH Company Project (HCL):</strong> Implemented cloud-based solutions and performed database migrations to Azure Cosmos DB. Developed automation scripts for routine database maintenance, reducing manual workload and operational costs.</li>
+            <li><strong>Fortune 500 Company Project:</strong> Optimized SQL database performance by fine-tuning queries, re-indexing, and monitoring system health, resulting in a 40% reduction in query execution time.</li>
+            <li><strong>Cloud Migration to Azure:</strong> Led the migration of on-prem databases to Azure Cosmos DB, ensuring data integrity, minimal downtime, and enhanced cloud performance.</li>
+            <li><strong>Database Automation Initiative:</strong> Developed automated backup strategies for cloud-hosted databases using SQL Agent jobs and PowerShell scripts, improving data reliability and reducing human error.</li>
         </ul>
     </section>
 
@@ -65,6 +92,44 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+<script>
+    const createFirework = () => {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        document.body.appendChild(firework);
+
+        const size = Math.random() * 10 + 5;
+        firework.style.width = `${size}px`;
+        firework.style.height = `${size}px`;
+        firework.style.left = `${Math.random() * 100}vw`;
+        firework.style.top = `${Math.random() * 100}vh`;
+
+        setTimeout(() => firework.remove(), 2000);
+    };
+
+    setInterval(createFirework, 300);
+</script>
+
+<style>
+    .firework {
+        position: fixed;
+        background-color: #f39c12;
+        border-radius: 50%;
+        animation: explode 2s ease-out;
+        z-index: 9999;
+    }
+
+    @keyframes explode {
+        from {
+            transform: scale(0);
+            opacity: 1;
+        }
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style>
 
 </body>
 </html>
