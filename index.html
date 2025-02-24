@@ -93,5 +93,44 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+<script>
+    const createFirework = () => {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        document.body.appendChild(firework);
+
+        const size = Math.random() * 10 + 5;
+        firework.style.width = `${size}px`;
+        firework.style.height = `${size}px`;
+        firework.style.left = `${Math.random() * 100}vw`;
+        firework.style.top = `${Math.random() * 100}vh`;
+
+        setTimeout(() => firework.remove(), 2000);
+    };
+
+    setInterval(createFirework, 300);
+</script>
+
+<style>
+    .firework {
+        position: fixed;
+        background-color: #f39c12;
+        border-radius: 50%;
+        animation: explode 2s ease-out;
+        z-index: 9999;
+    }
+
+    @keyframes explode {
+        from {
+            transform: scale(0);
+            opacity: 1;
+        }
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style>
+
 </body>
 </html>
