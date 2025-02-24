@@ -3,57 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddharth Khanna | Portfolio</title>
+    <title>Siddharth Khanna - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Siddharth Khanna</h1>
-            <p>Manager & Database Administrator Lead | Microsoft Azure SQL DBA</p>
-        </div>
+        <h1>Siddharth Khanna</h1>
+        <p>Database Administrator | MS SQL | Azure Cosmos DB</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I am Siddharth Khanna, a Manager and Database Administrator Lead at Alvarez & Marsal Global Capability Center with 11+ years of experience. My core expertise lies in MS SQL Server administration, and I have growing proficiency in Azure Cosmos DB. I am passionate about optimizing database performance and implementing cloud solutions.</p>
+        <p>I am Siddharth Khanna, a Database Administrator Lead with 12 years of experience at Alvarez & Marsal. I specialize in MS SQL databases and have hands-on expertise in Azure Cosmos DB, driving innovative data solutions and ensuring seamless cloud migrations.</p>
     </section>
 
     <section id="achievements" class="container">
         <h2>Achievements</h2>
+        <h3>Awards & Recognition</h3>
         <ul>
-            <li>Led the migration of critical databases to Azure, reducing downtime by 30%.</li>
-            <li>Optimized SQL Server performance for a Fortune 500 client, improving query speeds by 50%.</li>
-            <li>Certified Microsoft Azure Database Administrator Associate.</li>
-            <li>Mentored a team of junior DBAs, fostering their growth and technical expertise.</li>
+            <li>Accenture Shine Award (Oct 2014)</li>
+            <li>Accenture Star Performer Award (Oct 2015 & April 2016)</li>
+            <li>Accenture ACE Award (2017 & 2018)</li>
+            <li>TCS Star of the Month Award (Dec 2020 & March 2021)</li>
+            <li>TCS On the Spot Award (July 2021)</li>
+            <li>HCL Xtramiles Spot Award (Aug 2022 & Sept 2023)</li>
+            <li>A&M Innovative Newcomer Award (Dec 2024)</li>
+        </ul>
+
+        <h3>Technical Achievements</h3>
+        <ul>
+            <li>Led seamless upgrades of SQL Server databases (2008 R2/2012 to 2016/2017/2019/2022), enhancing system performance and data accessibility.</li>
+            <li>Executed SQL Server migrations to Azure (IaaS & PaaS) and configured Azure Cosmos DB accounts, databases, and containers.</li>
+            <li>Developed automation tasks using PowerShell scripts and SQL Agent jobs to reduce project costs and streamline team workflows.</li>
+            <li>Created scripts integrating Database Audit, Query Store, and DMVs to track query execution details and optimize performance.</li>
+        </ul>
+
+        <h3>Disaster Recovery & High Availability</h3>
+        <ul>
+            <li>Implemented disaster recovery strategies for on-premises and cloud environments using Azure Site Recovery.</li>
+            <li>Extensive experience with Always ON, Log Shipping, Database Replication, and SQL Server Clustering.</li>
+        </ul>
+
+        <h3>Leadership & Strategic Contributions</h3>
+        <ul>
+            <li>Led teams across organizations, delivering end-to-end client support and ensuring minimal downtime through proactive database management.</li>
+            <li>Spearheaded SQL Violation Report Management at TCS to ensure data compliance and security.</li>
         </ul>
     </section>
 
-    <section id="portfolio" class="container">
-        <h2>Portfolio</h2>
-        <p>Coming soon — A showcase of my projects and case studies.</p>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li>Optimized SQL database performance for a Fortune 500 company</li>
+            <li>Migrated on-prem databases to Azure Cosmos DB</li>
+            <li>Automated backup strategies for cloud-hosted databases</li>
+        </ul>
     </section>
 
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/siddharth-khanna-data-manager/" target="_blank">LinkedIn</a></li>
-            <li>Email: <a href="mailto:siddharth.khanna24@gmail.com">siddharth.khanna24@gmail.com</a></li>
-        </ul>
+        <p>Email: siddharth.khanna@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">Connect with me</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Siddharth Khanna. All Rights Reserved.</p>
+        <p>&copy; <span id="year"></span> Siddharth Khanna. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
