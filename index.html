@@ -47,9 +47,24 @@
             height: auto;
         }
         @media (max-width: 768px) {
-            header {
-                padding: 5rem 2rem;
-            }
+    header {
+        padding: 8rem 1rem;
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
             h1 {
                 font-size: 2rem;
             }
@@ -64,10 +79,10 @@
     </style>
 </head>
 <body>
-    <header style="background: url('cover.jpg') no-repeat center center; background-size: cover; color: white; padding: 12rem 2rem; text-align: center; display: flex; justify-content: center; align-items: center;">
+    <header style="background: url('cover.jpg') no-repeat center center; background-size: cover; color: white; padding: 12rem 2rem; text-align: center; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
         <div>
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Siddharth Khanna</h1>
-            <p style="font-size: 1.5rem; background: rgba(0, 0, 0, 0.6); padding: 0.5rem 1rem; border-radius: 8px;">Database Administrator | MS SQL | Azure Cosmos DB</p>
+            <h1 style="font-size: 4rem; margin-bottom: 1rem;">Siddharth Khanna</h1>
+            <p style="font-size: 1.8rem; background: rgba(0, 0, 0, 0.6); padding: 1rem 2rem; border-radius: 8px;">Database Administrator | MS SQL | Azure Cosmos DB</p>
         </div>
     </header>
 
