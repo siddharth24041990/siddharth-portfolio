@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #0f172a;
     color: #e2e8f0;
+    overflow: hidden;
 }
 
 header {
@@ -68,6 +69,28 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Fireworks animation */
+.firework {
+    position: fixed;
+    background-color: #f39c12;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explode 1.5s ease-out;
+    z-index: 9999;
+    opacity: 0.8;
+}
+
+@keyframes explode {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
