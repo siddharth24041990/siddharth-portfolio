@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header style="background: url('cover.jpg') no-repeat center center/cover; color: white; padding: 10rem 0; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h1 style="font-size: 4rem; margin-bottom: 1rem;">Siddharth Khanna</h1>
-        <p style="font-size: 1.5rem; background: rgba(0, 0, 0, 0.6); padding: 0.5rem 1rem; border-radius: 8px;">Database Administrator | MS SQL | Azure Cosmos DB</p>
+    <header style="background: url('cover.jpg') no-repeat center center/cover; color: white; padding: 4rem 0; text-align: center;">
+        <h1>Siddharth Khanna</h1>
+        <p>Database Administrator | MS SQL | Azure Cosmos DB</p>
     </header>
 
-    <nav style="background: #1e293b; padding: 1rem 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);">
-        <ul style="list-style: none; display: flex; justify-content: center; gap: 2rem; padding: 0; margin: 0;">
-            <li><a href="#about" style="color: white; text-decoration: none; font-weight: bold;">About Me</a></li>
-            <li><a href="#achievements" style="color: white; text-decoration: none; font-weight: bold;">Achievements</a></li>
-            <li><a href="#projects" style="color: white; text-decoration: none; font-weight: bold;">Projects</a></li>
-            <li><a href="#contact" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -86,16 +86,51 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">Connect with me</a></p>
     </section>
 
-    <footer style="background: #1e293b; color: white; text-align: center; padding: 2rem 0; margin-top: 2rem;">
+    <footer>
         <p>&copy; <span id="year"></span> Siddharth Khanna. All rights reserved.</p>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+<script>
+    const createFirework = () => {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        document.body.appendChild(firework);
 
+        const size = Math.random() * 10 + 5;
+        firework.style.width = `${size}px`;
+        firework.style.height = `${size}px`;
+        firework.style.left = `${Math.random() * 100}vw`;
+        firework.style.top = `${Math.random() * 100}vh`;
 
+        setTimeout(() => firework.remove(), 2000);
+    };
 
+    setInterval(createFirework, 300);
+</script>
+
+<style>
+    .firework {
+        position: fixed;
+        background-color: #f39c12;
+        border-radius: 50%;
+        animation: explode 2s ease-out;
+        z-index: 9999;
+    }
+
+    @keyframes explode {
+        from {
+            transform: scale(0);
+            opacity: 1;
+        }
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+</style>
 
 </body>
 </html>
