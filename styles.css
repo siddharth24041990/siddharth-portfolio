@@ -1,29 +1,44 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #0f172a;
+    background: #0f172a;
     color: #e2e8f0;
-    overflow: hidden;
 }
 
+/* Header */
 header {
-    color: white;
-    padding: 4rem 0;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #f8fafc;
+    padding: 3rem 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+header h1 {
+    margin: 0;
     font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navigation */
+nav {
+    background: #1e293b;
+    padding: 1rem 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background: #1e293b;
-    padding: 1rem 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -32,15 +47,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #f8fafc;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #38bdf8;
 }
 
+/* Containers */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -49,6 +67,11 @@ nav ul li a:hover {
     padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
 }
 
 h2 {
@@ -59,51 +82,26 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
     background: #0f172a;
     color: #94a3b8;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+footer p {
+    margin: 0;
 }
 
-/* Fireworks animation */
-.firework {
-    position: fixed;
-    background-color: #f39c12;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: explode 1.5s ease-out;
-    z-index: 9999;
-    opacity: 0.8;
+/* Links */
+a {
+    color: #38bdf8;
+    text-decoration: none;
 }
 
-@keyframes explode {
-    from {
-        transform: scale(0);
-        opacity: 1;
-    }
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        padding: 1.5rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
+a:hover {
+    text-decoration: underline;
 }
